@@ -16,7 +16,7 @@ Question 1：哪里用到了Session？<br>
 		User user=(User) session.getAttribute("user");<br>
     其中，User是自定义的对象。<br>
     
-    返回一个Cookie<br>
+返回一个Cookie<br>
     Cookie cookie=new Cookie("JSESSIONID",session.getId());<br>
 		cookie.setMaxAge(1800);<br>
 		cookie.setPath("/loginpractice");<br>
@@ -31,7 +31,7 @@ Question 1：哪里用到了Session？<br>
 
 Question 2：CheckServlet如何工作的？<br>
 第一步：在login.jsp中：<br>
-    <img src="/loginpractice/CheckServlet"><br />		<br>
+    “<img src="/loginpractice/CheckServlet">”<br />	
     这里会自动的访问CheckServlet获取验证码<br>
 第二步：CheckServlet随机生成4个验证字符，并加干扰点，在不同高度输出字符<br>
 第三部：在session对象中加属性<br>
